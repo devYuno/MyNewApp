@@ -1,6 +1,13 @@
 import './App.css';
 
+const Botao = (props) => {
+  return (
+    <div className={`botao ${props.tipo} ${props.cor}`}>{props.digito}</div>
+  )
+}
+
 function App() {
+
   return (
     <div className="App">
 
@@ -37,9 +44,9 @@ function App() {
           </div>
 
           <div className='linhaBotoes'>
-            <button className='botao zero cinza'>0</button>
-            <button className='botao comum cinza'>.</button>
-            <button className='botao comum laranja'>=</button>
+            <Botao tipo='zero' cor='cinza' digito='0'/>
+            <Botao tipo='comum' cor='cinza' digito='.'/>
+            <Botao tipo='comum' cor='laranja' digito='='/>
           </div>
 
         </div>
