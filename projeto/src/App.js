@@ -1,4 +1,5 @@
 import './App.css';
+import Contador from './Contador';
 
 const Botao = (props) => {
   return (
@@ -51,9 +52,11 @@ function App() {
 
         </div>
       </div>
-
+      <Contador className='botao cinza'/>
     </div>
   );
 }
 
 export default App;
+
+
